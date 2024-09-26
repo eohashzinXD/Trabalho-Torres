@@ -19,6 +19,7 @@ namespace Battleship_Online
         private Form1 form1; // Referência ao Form1 (Jogador 1)
         private bool jogoIniciado = false; // Verifica se o jogo começou
         private int maxNavios = 5; // Definir o número de navios que o jogador pode posicionar
+        private bool turnoJogador2 = false;
 
         public Adversario(Form1 form1)
         {
@@ -108,13 +109,29 @@ namespace Battleship_Online
                 return;
             }
 
+            if (!turnoJogador2)
+            {
+                MessageBox.Show("Turno do Jogador 1!");
+                return;
+            }
+
             Button botao = (Button)sender;
             Point coordenada = (Point)botao.Tag;
 
             // Notifica o Form1 (Jogador 1) do ataque
             form1.ReceberAtaque(coordenada);
+
+            if(botao.BackColor == SystemColors.Control)
+            {
+                botao.BackColor = Color.Gray;
+            }
+
+            // Muda o turno para o Jogador 1
+            turnoJogador2 = false;
+            form1.TrocarTurno();
         }
 
+        // Método chamado pelo Form1 para notificar um ataque recebido no Form2
         public void ReceberAtaque(Point coordenada)
         {
             if (naviosJogador.Contains(coordenada))
@@ -131,15 +148,26 @@ namespace Battleship_Online
             // Verificar se todos os navios foram destruídos
             if (naviosJogador.Count == 0)
             {
-                MessageBox.Show("Todos os seus navios foram destruídos! Jogador 2 perdeu.");
+                MessageBox.Show("Todos os seus navios foram destruídos! Você perdeu.");
             }
+
+            // Muda o turno para o Jogador 2
+            turnoJogador2 = true;
         }
 
+        // Método para iniciar o jogo (chamado pelo Form1)
         public void IniciarJogo()
         {
             jogoIniciado = true;
         }
 
+        // Método chamado pelo Form1 para trocar o turno
+        public void TrocarTurno()
+        {
+            turnoJogador2 = true;
+        }
+
+        // Retorna se todos os navios foram posicionados
         public bool NaviosPosicionados()
         {
             return naviosJogador.Count == maxNavios;

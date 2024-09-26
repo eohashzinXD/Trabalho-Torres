@@ -20,6 +20,7 @@ namespace Battleship_Online
         private Adversario form2;
         private bool jogoIniciado = false;
         private int maxNavios = 5;
+        private bool turnoJogador1 = true;
 
         public Form1()
         {
@@ -113,13 +114,29 @@ namespace Battleship_Online
                 return;
             }
 
+            if (!turnoJogador1)
+            {
+                MessageBox.Show("Turno do jogador 2!");
+                return;
+            }
+
             Button botao = (Button)sender;
             Point coordenada = (Point)botao.Tag;
 
             // Notifica o Form2 (Jogador 2) do ataque
             form2.ReceberAtaque(coordenada);
+
+            if (botao.BackColor == SystemColors.Control)
+            {
+                botao.BackColor = Color.Gray;
+            }
+
+            // Muda o turno para o Jogador 2
+            turnoJogador1 = false;
+            form2.TrocarTurno();
         }
 
+        // Método chamado pelo Form2 para notificar um ataque recebido no Form1
         public void ReceberAtaque(Point coordenada)
         {
             if (naviosJogador.Contains(coordenada))
@@ -136,18 +153,29 @@ namespace Battleship_Online
             // Verificar se todos os navios foram destruídos
             if (naviosJogador.Count == 0)
             {
-                MessageBox.Show("Todos os seus navios foram destruídos! Jogador 1 perdeu.");
+                MessageBox.Show("Todos os seus navios foram destruídos! Você perdeu.");
             }
+
+            // Muda o turno para o Jogador 1
+            turnoJogador1 = true;
         }
 
-        public bool NaviosPosicionados()
-        {
-            return naviosJogador.Count == maxNavios;
-        }
-
+        // Método para iniciar o jogo (chamado pelo Form2)
         public void IniciarJogo()
         {
             jogoIniciado = true;
+        }
+
+        // Método chamado pelo Form2 para trocar o turno
+        public void TrocarTurno()
+        {
+            turnoJogador1 = true;
+        }
+
+        // Retorna se todos os navios foram posicionados
+        public bool NaviosPosicionados()
+        {
+            return naviosJogador.Count == maxNavios;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -158,6 +186,17 @@ namespace Battleship_Online
         private void button1_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            form2 = new Adversario(this);
+            form2.Show();
         }
     }
 }

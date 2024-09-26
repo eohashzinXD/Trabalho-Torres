@@ -4,3 +4,14 @@ C:\Users\user\Desktop\Trabalho Torres\Battleship Online\Battleship Online\obj\De
 C:\Users\user\Desktop\Trabalho Torres\Battleship Online\Battleship Online\obj\Debug\Battleship_Online.Properties.Resources.resources
 C:\Users\user\Desktop\Trabalho Torres\Battleship Online\Battleship Online\obj\Debug\Battleship Online.csproj.GenerateResource.cache
 C:\Users\user\Desktop\Trabalho Torres\Battleship Online\Battleship Online\obj\Debug\Battleship Online.csproj.CoreCompileInputs.cache
+E:\Trabalho Torres\Trabalho-Torres-main\Battleship Online\bin\Debug\Battleship Online.exe.config
+E:\Trabalho Torres\Trabalho-Torres-main\Battleship Online\bin\Debug\Battleship Online.exe
+E:\Trabalho Torres\Trabalho-Torres-main\Battleship Online\bin\Debug\Battleship Online.pdb
+E:\Trabalho Torres\Trabalho-Torres-main\Battleship Online\obj\Debug\Battleship Online.csproj.AssemblyReference.cache
+E:\Trabalho Torres\Trabalho-Torres-main\Battleship Online\obj\Debug\Battleship_Online.Adversario.resources
+E:\Trabalho Torres\Trabalho-Torres-main\Battleship Online\obj\Debug\Battleship_Online.Form1.resources
+E:\Trabalho Torres\Trabalho-Torres-main\Battleship Online\obj\Debug\Battleship_Online.Properties.Resources.resources
+E:\Trabalho Torres\Trabalho-Torres-main\Battleship Online\obj\Debug\Battleship Online.csproj.GenerateResource.cache
+E:\Trabalho Torres\Trabalho-Torres-main\Battleship Online\obj\Debug\Battleship Online.csproj.CoreCompileInputs.cache
+E:\Trabalho Torres\Trabalho-Torres-main\Battleship Online\obj\Debug\Battleship Online.exe
+E:\Trabalho Torres\Trabalho-Torres-main\Battleship Online\obj\Debug\Battleship Online.pdb
