@@ -1,0 +1,6 @@
+C:\Users\user\Desktop\Trabalho Torres\Battleship Online\Battleship Online\obj\Debug\Battleship Online.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Trabalho Torres\Battleship Online\Battleship Online\obj\Debug\Battleship_Online.Adversario.resources
+C:\Users\user\Desktop\Trabalho Torres\Battleship Online\Battleship Online\obj\Debug\Battleship_Online.Form1.resources
+C:\Users\user\Desktop\Trabalho Torres\Battleship Online\Battleship Online\obj\Debug\Battleship_Online.Properties.Resources.resources
+C:\Users\user\Desktop\Trabalho Torres\Battleship Online\Battleship Online\obj\Debug\Battleship Online.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Trabalho Torres\Battleship Online\Battleship Online\obj\Debug\Battleship Online.csproj.CoreCompileInputs.cache

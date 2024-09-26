@@ -1,0 +1,11 @@
+C:\Users\user\Desktop\Trabalho Torres\Battleship Online\Battleship Online\obj\Release\Battleship Online.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Trabalho Torres\Battleship Online\Battleship Online\obj\Release\Battleship_Online.Adversario.resources
+C:\Users\user\Desktop\Trabalho Torres\Battleship Online\Battleship Online\obj\Release\Battleship_Online.Form1.resources
+C:\Users\user\Desktop\Trabalho Torres\Battleship Online\Battleship Online\obj\Release\Battleship_Online.Properties.Resources.resources
+C:\Users\user\Desktop\Trabalho Torres\Battleship Online\Battleship Online\obj\Release\Battleship Online.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Trabalho Torres\Battleship Online\Battleship Online\obj\Release\Battleship Online.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Trabalho Torres\Battleship Online\Battleship Online\bin\Release\Battleship Online.exe.config
+C:\Users\user\Desktop\Trabalho Torres\Battleship Online\Battleship Online\bin\Release\Battleship Online.exe
+C:\Users\user\Desktop\Trabalho Torres\Battleship Online\Battleship Online\bin\Release\Battleship Online.pdb
+C:\Users\user\Desktop\Trabalho Torres\Battleship Online\Battleship Online\obj\Release\Battleship Online.exe
+C:\Users\user\Desktop\Trabalho Torres\Battleship Online\Battleship Online\obj\Release\Battleship Online.pdb
